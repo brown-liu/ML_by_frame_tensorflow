@@ -1,0 +1,41 @@
+Terminology
+
+Cross Entropy
+
+
+
+Softmax
+25-08-2020:
+Normally used in Nural Network as the activiation function in the last (output) layer. It convert a group of non_normalized vectors to scalar within 1 and 0.
+it stands for probability. this is used in classification problems.
+
+
+back Propagation.
+25-08-2020:
+reverse of forward propagation. it calculs the deriviate of weight(ANN parameters) in respect of loss and pass data from the output layer towards input layer and update the params on the run.
+
+
+
+chain rule
+25-08-2020:
+when calculating derivatives of a function, if it looks like something like this. f(x)=(x^2+1)^6. the euqation can be rewritten to 
+g(x)=x^2+1
+f(g(x))=(g(x))^6 
+based on chain rule. f'(g'(x))=f'(g(x)) * g'(x) hence the result =6(x^2+1)^5 * 2
+
+
+display image in jupyter notebook
+from IPython.display import Image
+Image(path,height,width)
+
+use this for open image. ndimages.imread no longer exist
+import imageio
+im = imageio.imread('astronaut.png')
+
+reproduce model (same weight)
+tf.Session() no longer work. need to use tf.compact.v1.Session()
+
+bias
+Dense(4,input_shape=(1,),activation='relu',use_bias=True, bias_initialier='zeros')
+
+model.get_weights()   ==>> display weights and bias
