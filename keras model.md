@@ -11,4 +11,4 @@ model.summary() =>show sumary of model
 ## padding
 
 ##Backpropagation
->
+
